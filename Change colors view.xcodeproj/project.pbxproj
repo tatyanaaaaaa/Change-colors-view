@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		6CF9698227E72B80001B4B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9698127E72B80001B4B62 /* AppDelegate.swift */; };
 		6CF9698427E72B80001B4B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9698327E72B80001B4B62 /* SceneDelegate.swift */; };
-		6CF9698627E72B80001B4B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9698527E72B80001B4B62 /* ViewController.swift */; };
+		6CF9698627E72B80001B4B62 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9698527E72B80001B4B62 /* ColorsViewController.swift */; };
 		6CF9698927E72B80001B4B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9698727E72B80001B4B62 /* Main.storyboard */; };
 		6CF9698B27E72B82001B4B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9698A27E72B82001B4B62 /* Assets.xcassets */; };
 		6CF9698E27E72B82001B4B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF9698C27E72B82001B4B62 /* LaunchScreen.storyboard */; };
+		6CF9699627E72D07001B4B62 /* SlidersChangeColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF9699527E72D07001B4B62 /* SlidersChangeColorsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CF9697E27E72B80001B4B62 /* Change colors view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Change colors view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF9698127E72B80001B4B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CF9698327E72B80001B4B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6CF9698527E72B80001B4B62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CF9698527E72B80001B4B62 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		6CF9698827E72B80001B4B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CF9698A27E72B82001B4B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CF9698D27E72B82001B4B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CF9698F27E72B82001B4B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF9699527E72D07001B4B62 /* SlidersChangeColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersChangeColorsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				6CF9698127E72B80001B4B62 /* AppDelegate.swift */,
 				6CF9698327E72B80001B4B62 /* SceneDelegate.swift */,
-				6CF9698527E72B80001B4B62 /* ViewController.swift */,
+				6CF9698527E72B80001B4B62 /* ColorsViewController.swift */,
+				6CF9699527E72D07001B4B62 /* SlidersChangeColorsViewController.swift */,
 				6CF9698727E72B80001B4B62 /* Main.storyboard */,
 				6CF9698A27E72B82001B4B62 /* Assets.xcassets */,
 				6CF9698C27E72B82001B4B62 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CF9698627E72B80001B4B62 /* ViewController.swift in Sources */,
+				6CF9698627E72B80001B4B62 /* ColorsViewController.swift in Sources */,
 				6CF9698227E72B80001B4B62 /* AppDelegate.swift in Sources */,
 				6CF9698427E72B80001B4B62 /* SceneDelegate.swift in Sources */,
+				6CF9699627E72D07001B4B62 /* SlidersChangeColorsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,19 +296,19 @@
 				INFOPLIST_FILE = "Change colors view/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sosina-Tatyana.Change-colors-view";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,19 +324,19 @@
 				INFOPLIST_FILE = "Change colors view/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sosina-Tatyana.Change-colors-view";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
