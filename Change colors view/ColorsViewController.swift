@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ColorsViewController: UIViewController {
-
-    let switchButton = UIButton()
-    let slidersChangeColorsViewController = SlidersChangeColorsViewController()
+final class ColorsViewController: UIViewController {
     
+    // MARK: - Private property
+
+    private let showButton = UIButton()
+    private let slidersChangeColorsViewController = SlidersChangeColorsViewController()
+    
+    // MARK: - Internal func
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +22,21 @@ class ColorsViewController: UIViewController {
         setupDefaultSettings()
     }
     
-    @objc func switchButtonAction() {
+    // MARK: - Private func
+    
+    @objc private func switchButtonAction() {
         navigationController?.pushViewController(slidersChangeColorsViewController, animated: true)
-
     }
     
     private func setupDefaultSettings() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: self,
                                                             action: #selector(switchButtonAction))
+        
+        slidersChangeColorsViewController.slidersAction = { [weak self] result in
+            guard let self = self else { return }
+            self.view.backgroundColor = result
+        }
     }
-
-
 }
+
 
